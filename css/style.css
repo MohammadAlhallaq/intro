@@ -7,7 +7,7 @@
 body {
   border: 1px solid transparent;
   background-color: #222222;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #f5f5f5;
@@ -15,10 +15,19 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+a{
+  color: #f5f5f5;
+}
+
 /* Titles */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #9b9b9b;
 }
@@ -43,30 +52,6 @@ p {
 
 /* Links */
 
-a {
-  color: #1abc9c;
-  word-wrap: break-word;
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-a:hover, a:focus {
-  color: #7b7b7b;
-  text-decoration: none;
-  outline: 0;
-}
-
-a:before, a:after {
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
 hr {
   display: block;
   height: 1px;
@@ -75,7 +60,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
 
 /* Helpers */
 
@@ -91,10 +75,22 @@ hr {
 
 /* +++++ WRAP SECTIONS +++++ */
 
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #ddc2a5;
+  border-radius: 15px;
+  margin-right: 5px;
+  transition: background-color 1s;
+}
+
+.btn-primary-outline:hover:after {
+  background-color: #ddc2a5;
+  color: #f5f5f5;
+}
+
 #ww {
   padding-top: 150px;
 }
-
 
 /* +++++ Color Wraps / Blog Page +++++ */
 
@@ -178,5 +174,3 @@ bt {
 }
 
 /* Contact Form */
-
-
